@@ -21,4 +21,11 @@ gcd(15, 10) => gcd(15%10, 10) = gcd(5,10) => gcd(10,5) => gcd(10%5, 5) = gcd(0,5
 
 For Example: Instead of iterating till 'n' we can iterate till 'i * i <= n'
 
+# To Add N Numbers
+Intuition: We can use the formula for the sum of N numbers, i.e N(N+1)/2.
+
+For eg: N=5
+
+5(5+1)/2 = 5(6)/2 = 15.
+
 
