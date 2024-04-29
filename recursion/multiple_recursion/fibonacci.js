@@ -38,7 +38,7 @@ function fibonacciUsingRecursion(n){
     return last + secondLast
 }
 let n = 6;
-console.log(fibonacciUsingRecursion(n));
+console.log(fibonacciUsingRecursion(n)); //Time Complexity: ~O(2^N) //exponential
 
 //Using Loops
 
