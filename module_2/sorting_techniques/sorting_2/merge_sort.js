@@ -51,7 +51,7 @@ function merge(arr, low, mid, high) {
 }
 
 // Example usage:
-const arr = [38,27,47,10];
+const arr = [4, 1, 3, 9, 7];
 // const arr = [3,2,1]
 let low = 0;
 let high = arr.length - 1;
