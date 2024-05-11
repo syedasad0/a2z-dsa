@@ -17,6 +17,9 @@ function mergeSort(arr, low, high) {
 function merge(arr, low, mid, high) {
     const leftArray = arr.slice(low, mid + 1); // Left subarray
     const rightArray = arr.slice(mid + 1, high + 1); // Right subarray
+    console.log('leftArray====>', leftArray, typeof leftArray);
+    console.log('rightArray====>', rightArray, typeof rightArray);
+
 
     let leftIndex = 0;
     let rightIndex = 0;
