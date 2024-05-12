@@ -1,42 +1,44 @@
+
 function partition(arr, low, high) {
-    let pivot = arr[low];
-    let i = low;
-    let j = high;
+    // Selecting the pivot element (in this implementation, the rightmost element)
+    let pivot = arr[high];
 
-    while (i < j) {
-        while (arr[i] <= pivot && i <= high) {
+    // Initializing the index of the smaller element
+    let i = low - 1;
+
+    // Iterating through the array from 'low' to 'high - 1'
+    for (let j = low; j < high; j++) {
+        // If the current element is less than or equal to the pivot
+        if (arr[j] <= pivot) {
+            // Increment the index of the smaller element
             i++;
-        }
 
-        while (arr[j] > pivot && j >= low) {
-            j--;
-        }
-        
-        if (i < j) {
+            // Swap arr[i] and arr[j] to move the smaller element to the left side
             let temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
         }
     }
-    
-    let temp = arr[low];
-    arr[low] = arr[j];
-    arr[j] = temp;
-    
-    return j;
+
+    // After the loop, swap the pivot element (which is at index 'high') with the element at index 'i + 1'
+    let temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+
+    // Return the index of the pivot element after partitioning
+    return i + 1;
 }
 
 function quickSort(arr, low, high) {
     if (low < high) {
-        let pIndex = partition(arr, low, high);
-        quickSort(arr, low, pIndex - 1);
-        quickSort(arr, pIndex + 1, high);
+        let partitionIndex = partition(arr, low, high);
+        quickSort(arr, low, partitionIndex - 1);
+        quickSort(arr, partitionIndex + 1, high);
     }
-    
     return arr;
 }
 
-let array = [4, 6, 2, 5, 7, 9, 1, 3];
-let low =0;
-let high = array.length-1;
-console.log("Sorted Array:", quickSort(array, low, high)); 
+let arr = [4,1,7,9,3];
+let low = 0;
+let high = arr.length - 1;
+console.log(quickSort(arr, low, high));
