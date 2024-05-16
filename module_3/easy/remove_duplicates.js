@@ -1,7 +1,7 @@
 /*Given an integer array sorted in non-decreasing order, 
 remove the duplicates in place such that each unique element appears only once. The relative order of the elements should be kept the same.*/
 
-//BRUTE FORCE
+//BRUTE FORCE Complexity: NlogN
 
 function removeDuplicates(arr){
     let set = new Set();
@@ -22,7 +22,7 @@ let size = removeDuplicates(arr);
 console.log(arr.slice(0,size));
 
 
-//OPTIMAL: Two Pointers Approaach
+//OPTIMAL: Two Pointers Approaach : Complexity Linear Complexity (N)
 
 function removeDuplicates2(arr){
     if (arr.length === 0) return;
