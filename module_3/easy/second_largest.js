@@ -2,7 +2,7 @@
 (Sort the array in asc order, store n-1 value in largest variable iterate array from end and check if arr[i] !== largest once condition matches brek;) */
 
 
-//Optimal Approach [Complexity: N]
+//Optimal Approach [Complexity: N] 
 function findSecondLargest(arr){
     let largest = arr[0];
     let secondLargest = -1;
