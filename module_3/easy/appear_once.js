@@ -58,3 +58,16 @@ function checkOccurance(arr) {
 }
 let arr2 = [4, 1, 2, 4, 5, 1, 2]
 console.log(checkOccurance(arr2));
+
+//Approach 4: Using XOR
+
+function checkOccur(arr){
+    let xor =0;
+    for(let i=0; i<arr.length; i++){
+        xor = xor^arr[i];
+    }
+    return xor;
+
+}
+let arr3 = [4, 1, 2, 4, 5, 1, 2]
+console.log(checkOccur(arr3));
