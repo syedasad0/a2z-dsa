@@ -1,4 +1,4 @@
-**Leaders in Array**
+**Leaders in Array** - Done
 **Sort an Array of 0s 1s and 2s** -Done
 **Find Number in Rotated Sorted Array**
 **next greater element** -Done
@@ -6,7 +6,7 @@
 **Find SubArray with given Sum**
 **Minimum Sum of Array Converting**
 **Largest common sub-sequence (DP)**
-**Find 2nd Max in Array**
+**Find 2nd Max in Array** - Done
 **Square of sorted array**
 **First Repeating Element in array**
 **Paranthesis Checker**
