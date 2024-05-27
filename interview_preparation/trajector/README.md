@@ -7,8 +7,8 @@
 **Minimum Sum of Array Converting**
 **Largest common sub-sequence (DP)**
 **Find 2nd Max in Array** -Done
-**Square of sorted array**
-**First Repeating Element in array**
+**Square of sorted array** -Done
+**First Repeating Element in array** -Done
 **Paranthesis Checker**
 **Floor in sorted array**
 **Trailing zeros in factorial (log N)**

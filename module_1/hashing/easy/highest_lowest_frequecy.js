@@ -4,7 +4,7 @@ function findFrequency(){
     let map = new Map();
     for(let i=0; i< arr.length; i++){
         let count = map.get(arr[i]) || 0;
-        map.set(arr[i], count = count + 1);
+        (arr[i], count = count + 1);
     }
     let values = [...map.values()];
 
