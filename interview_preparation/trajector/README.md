@@ -3,12 +3,12 @@
 **Find Number in Rotated Sorted Array** -Done
 **next greater element** -Done
 **common elements in 3 sorted arrays** -Done
-**Find SubArray with given Sum**
+**Find SubArray with given Sum** -Done
 **Minimum Sum of Array Converting**
 **Largest common sub-sequence (DP)**
 **Find 2nd Max in Array** -Done
 **Square of sorted array** -Done
 **First Repeating Element in array** -Done
-**Paranthesis Checker**
+**Paranthesis Checker** -Done
 **Floor in sorted array**
-**Trailing zeros in factorial (log N)**
+**Trailing zeros in factorial (log N)** -Done
