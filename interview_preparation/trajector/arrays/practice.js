@@ -170,3 +170,20 @@ function findLeader(arr){
 const arr2 = [10, 22, 12, 3, 0, 6]; //Output: [22,12,6]
 console.log(findLeader(arr2));
 */
+
+function secondLargest(arr){
+  let largest = arr[0];
+  let secondLargest = -Infinity;
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > largest){
+      secondLargest = largest;
+      largest = arr[i];
+    }else if(arr[i] > secondLargest && arr[i] != largest){
+      secondLargest = arr[i];
+    }
+  }
+  return secondLargest
+
+}
+arr = [5, 6, 3, 9, 7, 4];
+console.log(secondLargest(arr));
