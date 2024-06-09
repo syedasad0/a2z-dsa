@@ -132,7 +132,8 @@ function findFirstRepeatingElementUsingHashMap(arr){
 }
 const arr2 = [1, 5, 3, 4, 3, 5, 6]; //Output: 2
 console.log(findFirstRepeatingElementUsingHashMap(arr2));
-*/
+
+
 function findLeadersUsingBruteForce(arr){
   let leaderArr = [];
   for(let i=0; i< arr.length; i++){
@@ -151,3 +152,21 @@ function findLeadersUsingBruteForce(arr){
 }
 const arr = [10, 22, 12, 3, 0, 6]; //Output: [22,12,6]
 console.log(findLeadersUsingBruteForce(arr));
+
+function findLeader(arr){
+  let leaderArr = [];
+  let leader = arr[arr.length - 1];
+  leaderArr.push(leader);
+  for(let i=arr.length - 2; i>=0; i--){
+    if(arr[i] > leader){
+      leaderArr.push(arr[i]);
+      leader = arr[i];
+    }
+  }
+  return leaderArr
+
+}
+
+const arr2 = [10, 22, 12, 3, 0, 6]; //Output: [22,12,6]
+console.log(findLeader(arr2));
+*/
