@@ -133,3 +133,21 @@ function findFirstRepeatingElementUsingHashMap(arr){
 const arr2 = [1, 5, 3, 4, 3, 5, 6]; //Output: 2
 console.log(findFirstRepeatingElementUsingHashMap(arr2));
 */
+function findLeadersUsingBruteForce(arr){
+  let leaderArr = [];
+  for(let i=0; i< arr.length; i++){
+    let leader = true;
+    for(let j= i + 1; j < arr.length; j++){
+      if(arr[j] > arr[i]){
+        leader = false;
+        break;
+      }
+    }
+    if(leader == true){
+      leaderArr.push(arr[i]);
+    }
+  }
+  return leaderArr
+}
+const arr = [10, 22, 12, 3, 0, 6]; //Output: [22,12,6]
+console.log(findLeadersUsingBruteForce(arr));
