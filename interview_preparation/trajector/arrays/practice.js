@@ -71,7 +71,7 @@ console.log(findCommon(arr1, arr2, arr3));
 
 
 //WAP to find an element in rotated sorted array
-
+/*
 function findElement(arr, target){
   let left = 0;
   let right = arr.length - 1;
@@ -100,3 +100,36 @@ function findElement(arr, target){
 const nums = [4, 5, 6, 7, 0, 1, 2];
 const target = 7;
 console.log(findElement(nums, target))
+
+
+//Brute Force
+function findFirstRepeatingElement(arr){
+  for(let i=0; i < arr.length; i++){
+    for(let j = i+1; j< arr.length; j++){
+      if(arr[i] === arr[j]){
+        return i+1;
+      }
+    }
+  }
+  return -1
+
+}
+const arr = [1, 5, 3, 4, 3, 5, 6]; //Output: 2
+console.log(findFirstRepeatingElement(arr));
+
+//Hashing
+
+function findFirstRepeatingElementUsingHashMap(arr){
+  let map = new Map();
+  for(let i = 0; i < arr.length; i++){
+    map.set(arr[i], (map.get(arr[i]) || 0) + 1);
+    if(map.get(arr[i]) == 2){
+      return map.get(arr[i]);
+    }
+  }
+  return -1
+
+}
+const arr2 = [1, 5, 3, 4, 3, 5, 6]; //Output: 2
+console.log(findFirstRepeatingElementUsingHashMap(arr2));
+*/
