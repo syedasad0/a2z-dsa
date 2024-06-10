@@ -17,12 +17,12 @@ function sort(arr) {
     for (let i = 0; i < count[1]; i++) {
         arr[index++] = 1
     }
-    for (let i = 0; i < count[1]; i++) {
+    for (let i = 0; i < count[2]; i++) {
         arr[index++] = 2
     }
     return arr;
 }
-let arr = [2, 0, 2, 1, 1, 0]
+let arr = [2, 0, 2, 1, 1, 1, 0]
 console.log(sort(arr));
 
 //Approach 2: Optimal Solution Dutch National Flag Algoritm 

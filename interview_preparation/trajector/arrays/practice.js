@@ -169,7 +169,7 @@ function findLeader(arr){
 
 const arr2 = [10, 22, 12, 3, 0, 6]; //Output: [22,12,6]
 console.log(findLeader(arr2));
-*/
+
 
 function secondLargest(arr){
   let largest = arr[0];
@@ -187,3 +187,55 @@ function secondLargest(arr){
 }
 arr = [5, 6, 3, 9, 7, 4];
 console.log(secondLargest(arr));
+
+
+
+function sort(arr){
+  let countArr = [0,0,0];
+  for(let i = 0; i < arr.length; i++){
+    countArr[arr[i]]++;
+  }
+  let index = 0;
+  for(let i=0; i < countArr[0]; i++){
+    arr[index++] = 0;
+  }
+  for(let i=0; i < countArr[1]; i++){
+    arr[index++] = 1;
+  }
+  for(let i=0; i< countArr[2]; i++){
+    arr[index++] = 2;
+  }
+  return arr;
+
+}
+let arr = [2, 0, 2, 1, 1, 1, 0]
+console.log(sort(arr));
+
+function sortUsingDnf(arr){
+  let low = 0;
+  let mid = 0;
+  let high = arr.length - 1;
+  while(mid <= high){
+    if(arr[mid] == 0){
+      swap(arr, low, mid);
+      low++;
+      mid++;
+    }
+    else if(arr[mid] == 1){
+      mid++;
+    }else if(arr[mid] == 2){
+      swap(arr, mid, high);
+      high--;
+    }
+  }
+  return arr;
+}
+function swap(arr, first, second){
+  let temp = arr[first];
+  arr[first] = arr[second];
+  arr[second] = temp;
+}
+let arr2 = [2, 0, 2, 1, 1, 1, 0]
+console.log(sortUsingDnf(arr2));
+
+*/
