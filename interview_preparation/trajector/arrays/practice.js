@@ -239,3 +239,28 @@ let arr2 = [2, 0, 2, 1, 1, 1, 0]
 console.log(sortUsingDnf(arr2));
 
 */
+
+
+//WAP to find the square of a sorted array
+function sortSquare(arr){
+  let sortedArray = new Array(arr.length);
+  let left = 0;
+  let right = arr.length - 1;
+  let pos = arr.length - 1;
+  while(left <= right){
+    const leftSquare = arr[left] * arr[left];
+    const rightSquare = arr[right] * arr[right];
+    if(leftSquare > rightSquare){
+      sortedArray[pos] = leftSquare;
+      left++;
+    }
+    else{
+      sortedArray[pos] = rightSquare;
+      right--;
+    }
+    pos--;
+  }
+  return sortedArray
+}
+const arr = [-4, -1, 0, 3, 10]; 
+console.log(sortSquare(arr)); // Output: [0, 1, 9, 16, 100] 
