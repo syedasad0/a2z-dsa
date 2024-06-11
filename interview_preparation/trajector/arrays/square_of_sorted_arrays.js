@@ -22,4 +22,4 @@ function sortedSquares(arr){
 
 }
 const arr = [-4, -1, 0, 3, 10];
-console.log(sortedSquares(arr)); // Output: [0, 1, 9, 16, 100]
+console.log(sortedSquares(arr)); // Output: [0, 1, 9, 16, 100] 
