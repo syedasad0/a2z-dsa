@@ -11,7 +11,7 @@ function findLeader(arr){
   return leaderArr
 }
 function reverse(arr, first, last){
-  
-}
+
+} 
 const arr = [10, 22, 12, 3, 0, 6]; //Output: [22,12,6]
 console.log(findLeader(arr));
